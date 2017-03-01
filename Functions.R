@@ -1,3 +1,4 @@
+## This function creates makeCachMatrix object - matrix
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -11,6 +12,8 @@ makeCacheMatrix <- function(x = matrix()) {
        setsolve = setsolve,
        getsolve = getsolve)
 }
+
+## This function calculates the inverse matrix ###
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
   if(!is.null(m)) {
